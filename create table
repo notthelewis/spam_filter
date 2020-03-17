@@ -1,0 +1,6 @@
+MariaDB [spam_filter]> create table expletives(
+    -> ID int NOT NULL,
+    -> bad_word VARCHAR(50) NOT NULL,
+    -> word_rating int,
+    -> PRIMARY KEY (bad_word)
+    -> );
