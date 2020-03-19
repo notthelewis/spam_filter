@@ -4,3 +4,5 @@ MariaDB [spam_filter]> create table expletives(
     -> word_rating int,
     -> PRIMARY KEY (bad_word)
     -> );
+
+MariaDB [spam_filter]> ALTER TABLE expletives CHANGE bad_word bad_word VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
